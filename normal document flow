@@ -1,0 +1,25 @@
+1. Normal document flow
+a. Block Elements
+b. In-line Elements
+
+2. Display property
+a. Block
+b. Inline
+c. inline-Block (width/height)
+d. None - hiding
+e. Flex - turns a container a flexible box layout
+f. Grid - turns a conatainer into grid layout (rows/columns)
+g. Float - shft/push elements to one side (right/left)
+
+Responsive Web Design
+1. Fluid Layouts - Use Percentages
+2. media queries
+syntax:
+@media(condition){
+    selector{
+         property:value;
+    }
+}
+
+flexible imaage & videos
+4. mobile first approach

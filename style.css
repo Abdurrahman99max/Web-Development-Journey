@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #292727;
+}
+
+/* Header */
+header {
+  background: #b64bb6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navbar using Flexbox */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  background: #363434;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navbar ul li a:hover {
+  background: #4CAF50;
+  border-radius: 16px;
+}
+
+/* Main content using CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* content and sidebar */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Content section */
+.content {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Cards inside content using Flexbox */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design with Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* stack content and sidebar */
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+}
